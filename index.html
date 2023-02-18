@@ -6,23 +6,25 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
 
 		<script>
 			function validate() {
+				
 				var password = document.myForm.password.value;
 				var age = calculateAge(document.myForm.bdate.value);
 				var successMessage = document.getElementById("successMsg");
 				var errorMessage1 = document.getElementById("pwerror");
 				var errorMessage2 = document.getElementById("bdateerror");
-				if (password.length < 8) {
+				if (password.length < 8) 
+				{
 					errorMessage1.innerHTML = "Password must be at least 8 characters." + "<br>";
 					successMessage.innerHTML = "";
 				} else {
@@ -96,8 +98,9 @@
 			<br>
 			<input type="button" name="submit" value="Submit" onclick="return validate()">
 			<input type="reset" name="reset" value="Reset"> </b>
-            <br> <br>
-            <span id="successMsg"></span>
+                        <br> <br>
+                        <span id="successMsg"></span>
+			
 		</form>
 	</body>
 </html>
